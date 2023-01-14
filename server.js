@@ -1,6 +1,6 @@
 require("dotenv").config();
 // pull PORT from .env, give default value of 3000
-const { PORT = 3000, DATABASE_URL } = process.env;
+const { PORT = 4000, DATABASE_URL } = process.env;
 const mongoose = require("mongoose");
 // import express
 const express = require("express");
@@ -48,3 +48,4 @@ app.get("/", (req, res) => {
   res.send("hello world");
 });
 
+app.listen(PORT, () => console.log(`listening on PORT ${PORT}`));
