@@ -1,5 +1,7 @@
+// import mongoose connection
 import mongoose from "./connection.js";
 
+// Schema model mongoose connection
 const { Schema, model } = mongoose;
 
 // Bookmark Schema

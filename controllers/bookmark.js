@@ -1,8 +1,11 @@
+// Import express and bookmark model
 import express from "express";
 import Bookmark from "../models/bookmark.js";
 
+// Express router
 const router = express.Router();
 
+// Error handler
 const catcher = (res) => (error) => res.status(400).json({error})
 
 // "/cheese" - index route
